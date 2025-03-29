@@ -18,7 +18,7 @@ public class ChoixActivity extends AppCompatActivity {
         Button buttonNouvelleInscription = findViewById(R.id.buttonNouvelleInscription);
         Button buttonConnexion = findViewById(R.id.buttonConnexion);
 
-        // Naviguer vers l'activité de nouvelle inscription
+
         buttonNouvelleInscription.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -27,7 +27,7 @@ public class ChoixActivity extends AppCompatActivity {
             }
         });
 
-        // Naviguer vers l'activité de connexion
+
         buttonConnexion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

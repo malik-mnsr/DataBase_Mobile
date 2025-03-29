@@ -34,7 +34,7 @@
             android:orientation="vertical"
             android:padding="32dp">
 
-            <!-- Welcome Title -->
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -45,7 +45,7 @@
                 android:textSize="28sp"
                 android:textStyle="bold"/>
 
-            <!-- Sign Up Button -->
+
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonNouvelleInscription"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
@@ -66,7 +66,7 @@
                 app:strokeColor="@color/colorPrimary"
                 app:strokeWidth="1dp"/>
 
-            <!-- Login Button -->
+
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonConnexion"
                 style="@style/Widget.MaterialComponents.Button"

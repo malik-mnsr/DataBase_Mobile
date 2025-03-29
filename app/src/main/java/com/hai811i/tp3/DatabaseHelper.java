@@ -208,7 +208,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         if (cursor != null) {
             cursor.close();
         }
-        return -1; // Retourne -1 si l'utilisateur n'est pas trouvé
+        return -1;
     }
 
     public long addEvent(String h8h10h, String h10h12h, String h14h16h, String h16h18h, long userId) {
@@ -278,7 +278,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         SQLiteDatabase db = this.getWritableDatabase();
 
-        // Vérifier si un événement existe déjà pour cet utilisateur et cette date
+
         Cursor cursor = db.query(TABLE_EVENTS,
                 new String[]{COLUMN_EVENT_ID},
                 COLUMN_USER_ID + " = ? AND " + COLUMN_DATE + " = ?",
@@ -287,7 +287,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         long result;
         if (cursor != null && cursor.getCount() > 0) {
-            // Mise à jour
+
             cursor.moveToFirst();
             @SuppressLint("Range") long eventId = cursor.getLong(cursor.getColumnIndex(COLUMN_EVENT_ID));
             cursor.close();
@@ -295,7 +295,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                     COLUMN_EVENT_ID + " = ?",
                     new String[]{String.valueOf(eventId)});
         } else {
-            // Insertion
+
             values.put(COLUMN_USER_ID, userId);
             values.put(COLUMN_DATE, date);
             result = db.insert(TABLE_EVENTS, null, values);

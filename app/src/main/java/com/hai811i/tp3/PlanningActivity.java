@@ -50,26 +50,26 @@ public class PlanningActivity extends AppCompatActivity implements EventAdapter.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_planning);
 
-        // Initialiser les vues
+
         initializeViews();
 
-        // Récupérer les informations de l'utilisateur connecté
+
         displayUserInfo();
 
-        // Initialiser la base de données
+
         dbHelper = new DatabaseHelper(this);
         eventsMap = new HashMap<>();
         loadEventsFromDatabase();
 
-        // Configurer l'adaptateur d'événements
+
         eventAdapter = new EventAdapter(this, new ArrayList<>(), this, this);
         eventListView.setAdapter(eventAdapter);
         eventListView.setVisibility(View.GONE);
 
-        // Configurer les boutons
+
         setupButtons();
 
-        // Configurer le calendrier horizontal
+
         setupHorizontalCalendar();
     }
 
@@ -125,7 +125,7 @@ public class PlanningActivity extends AppCompatActivity implements EventAdapter.
                 new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
         );
 
-        // Sélectionner la date actuelle
+
         Calendar calendar = Calendar.getInstance();
         Date today = calendar.getTime();
         currentDate = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault()).format(today);

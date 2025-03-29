@@ -32,7 +32,7 @@ public class ConnexionActivity extends AppCompatActivity {
                 String password = editTextPassword.getText().toString();
 
                 if (dbHelper.checkUser(login, password)) {
-                    // Récupérer les informations de l'utilisateur
+
                     User user = dbHelper.getUser(login);
 
                     if (user != null) {

@@ -18,7 +18,7 @@
         android:elevation="10dp"
         android:outlineProvider="background"/>
 
-    <!-- Main Card Container -->
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
             android:orientation="vertical"
             android:padding="32dp">
 
-            <!-- Welcome Title -->
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -45,7 +45,7 @@
                 android:textSize="28sp"
                 android:textStyle="bold"/>
 
-            <!-- Email Field -->
+
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -65,7 +65,7 @@
                     android:inputType="textEmailAddress"/>
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!-- Password Field -->
+
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -87,7 +87,7 @@
                     android:inputType="textPassword"/>
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!-- Login Button -->
+
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonConnexion"
                 style="@style/Widget.MaterialComponents.Button"
@@ -104,7 +104,7 @@
                 app:iconPadding="8dp"
                 app:iconTint="@android:color/white"/>
 
-            <!-- Forgot Password Link -->
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

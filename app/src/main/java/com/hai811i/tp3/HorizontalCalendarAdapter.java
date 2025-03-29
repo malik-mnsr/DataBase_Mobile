@@ -41,7 +41,7 @@ public class HorizontalCalendarAdapter extends RecyclerView.Adapter<HorizontalCa
     public void onBindViewHolder(@NonNull DateViewHolder holder, int position) {
         Date date = dates.get(position);
 
-        // Format the date into day, month, and year
+
         SimpleDateFormat dayFormat = new SimpleDateFormat("dd", Locale.getDefault());
         SimpleDateFormat monthFormat = new SimpleDateFormat("MMM", Locale.getDefault());
         SimpleDateFormat yearFormat = new SimpleDateFormat("yyyy", Locale.getDefault());
@@ -63,7 +63,7 @@ public class HorizontalCalendarAdapter extends RecyclerView.Adapter<HorizontalCa
         holder.itemView.setOnClickListener(v -> {
             selectedPosition = position;
             notifyDataSetChanged();
-            listener.onDateSelected(date); // Passer l'objet Date directement
+            listener.onDateSelected(date);
         });
     }
 

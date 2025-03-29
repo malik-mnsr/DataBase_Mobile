@@ -132,7 +132,7 @@
                     android:layout_height="wrap_content"
                     android:text="Sport"
                     android:textColor="@color/black"
-                    android:layout_marginEnd="16dp"/> <!-- Espacement entre les CheckBox -->
+                    android:layout_marginEnd="16dp"/>
 
                 <CheckBox
                     android:id="@+id/checkBoxMusique"
@@ -140,7 +140,7 @@
                     android:layout_height="wrap_content"
                     android:text="Musique"
                     android:textColor="@color/black"
-                    android:layout_marginEnd="16dp"/> <!-- Espacement entre les CheckBox -->
+                    android:layout_marginEnd="16dp"/>
 
                 <CheckBox
                     android:id="@+id/checkBoxLecture"

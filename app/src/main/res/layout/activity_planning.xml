@@ -10,7 +10,7 @@
     android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
 
-            <!-- Titre Bienvenue -->
+
             <TextView
                 android:id="@+id/textViewWelcome"
                 android:layout_width="match_parent"
@@ -22,7 +22,7 @@
                 android:textStyle="bold"
                 android:layout_marginBottom="24dp"/>
 
-            <!-- Section Utilisateur -->
+
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
