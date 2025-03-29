@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/ic_backgournd1"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+
+            <!-- Titre Bienvenue -->
+            <TextView
+                android:id="@+id/textViewWelcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bienvenue dans votre Planning"
+                android:textAlignment="center"
+                android:textColor="@color/DleftBlue"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- Section Utilisateur -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:strokeColor="@color/colorPrimary"
+                app:strokeWidth="1dp"
+                android:layout_marginBottom="24dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/textViewUserInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Informations utilisateur"
+                        android:textColor="@color/DleftBlue"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp"/>
+
+                    <!-- Ici vous pouvez ajouter les détails utilisateur -->
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Section Planning -->
+            <TextView
+                android:id="@+id/textViewPlanningTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Votre Planning"
+                android:textColor="@color/DleftBlue"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Calendrier Horizontal -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/horizontalCalendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:clipToPadding="false"
+                android:scrollbars="horizontal"
+                 />
+
+
+            <!-- Bouton Afficher Événements -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/toggleEventsButton"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Afficher les événements"
+                android:textColor="@color/DleftBlue"
+                android:textSize="16sp"
+                app:cornerRadius="12dp"
+                app:iconGravity="textStart"
+                app:iconPadding="8dp"
+                app:strokeColor="@color/DleftBlue"
+                app:strokeWidth="1dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Liste des Événements -->
+            <ListView
+                android:id="@+id/eventListView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone"
+                />
+
+            <!-- Bouton Ajouter Événement -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addEventButton"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Ajouter un événement"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                app:backgroundTint="@color/colorPrimary"
+                app:cornerRadius="12dp"
+
+                app:iconGravity="textStart"
+                app:iconPadding="8dp"
+                app:iconTint="@android:color/white"/>
+        </LinearLayout>
+

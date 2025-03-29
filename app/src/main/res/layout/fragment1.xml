@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/ic_backgournd1">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp"
+            android:background="@drawable/lavender_border">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textAlignment="center"
+                android:textColor="@color/DleftBlue"
+                android:textSize="36sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/editTextLogin"
+                android:background="@drawable/lavender_border"
+                android:layout_marginTop="9dp"
+                android:padding="8dp"
+                android:hint="Username"
+                android:drawableLeft="@drawable/baseline_person_pin_24"
+                android:drawablePadding="8dp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/editTextPassword"
+                android:background="@drawable/lavender_border"
+                android:layout_marginTop="9dp"
+                android:padding="8dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawablePadding="9dp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/editTextNom"
+                android:background="@drawable/lavender_border"
+                android:layout_marginTop="9dp"
+                android:padding="8dp"
+                android:hint="Nom"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/editTextPrenom"
+                android:background="@drawable/lavender_border"
+                android:layout_marginTop="9dp"
+                android:padding="8dp"
+                android:hint="Prénom"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/editTextDateNaissance"
+                android:background="@drawable/lavender_border"
+                android:layout_marginTop="9dp"
+                android:padding="8dp"
+                android:hint="Date de naissance"
+                android:inputType="date"
+                android:drawableLeft="@drawable/baseline_calendar_month_24"
+                android:drawablePadding="8dp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/editTextTelephone"
+                android:background="@drawable/lavender_border"
+                android:layout_marginTop="9dp"
+                android:padding="8dp"
+                android:hint="Numéro de téléphone"
+                android:inputType="phone"
+                android:drawableLeft="@drawable/baseline_phone_24"
+                android:drawablePadding="8dp"
+                android:textColor="@color/black"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/editTextEmail"
+                android:background="@drawable/lavender_border"
+                android:layout_marginTop="9dp"
+                android:padding="8dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:drawablePadding="8dp"
+                android:textColor="@color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="9dp"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@+id/checkBoxSport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sport"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="16dp"/> <!-- Espacement entre les CheckBox -->
+
+                <CheckBox
+                    android:id="@+id/checkBoxMusique"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Musique"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="16dp"/> <!-- Espacement entre les CheckBox -->
+
+                <CheckBox
+                    android:id="@+id/checkBoxLecture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lecture"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Sign Up"
+                android:id="@+id/signup_button"
+                android:textSize="18dp"
+                android:layout_marginTop="0dp"
+                app:cardCornerRadius="20dp"/>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TP3</string>
+    <string-array name="time_slots">
+        <item>08h-10h</item>
+        <item>10h-12h</item>
+        <item>14h-16h</item>
+        <item>16h-18h</item>
+    </string-array>
+
+</resources>
